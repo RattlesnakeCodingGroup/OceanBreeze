@@ -24,13 +24,14 @@
 
 </head>
 
+
 <body>
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
     <span class="site-heading-upper text-primary mb-3">Ocean Breeze</span>
     <span class="site-heading-lower">Fish Market</span>
   </h1>
-
+{% block body %}
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
@@ -41,18 +42,18 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'main:index' %}">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'main:about' %}">About</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'main:products' %}">Products</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'main:store' %}">Store</a>
           </li>
         </ul>
       </div>
@@ -71,7 +72,7 @@
           <p class="mb-3">Great prices on a large selection of Fresh Seafood. We also offer purchases of whole fish. We guarantee you will be satisfied by our selection!
           </p>
           <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
+            <a class="btn btn-primary btn-xl" href="{% url 'main:store' %}">Visit Us Today!</a>
           </div>
         </div>
       </div>
@@ -93,10 +94,10 @@
       </div>
     </div>
   </section>
-
+    {% endblock %}
   <footer class="footer text-faded text-center py-5">
     <div class="container">
-      <p class="m-0 small">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 small">Copyright &copy; Ocean Breeze Fish Market</p>
       <a href='https://www.freepik.com/vectors/pattern'>Pattern vector created by macrovector - www.freepik.com</a>
     </div>
   </footer>

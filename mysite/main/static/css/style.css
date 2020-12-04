@@ -203,7 +203,7 @@ p {
 }
 
 .list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+  border-bottom: 1px solid rgba(30, 43, 129, 0.9);
   padding-bottom: .25rem;
   margin-bottom: 1rem;
   font-style: italic;
@@ -247,8 +247,8 @@ p {
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #df902a;
-  border-color: #df902a;
+  background-color: rgb(30, 43, 129);
+  border-color: rgb(30, 43, 129);
 }
 
 .font-weight-light {

@@ -17,3 +17,4 @@ class ProductView(View):
 class StoreView(View):
     def get(self, request):
         return render(request, 'store.html')
+

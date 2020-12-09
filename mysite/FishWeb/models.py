@@ -6,3 +6,6 @@ class Item(models.Model):
     price = models.FloatField()
     quantity = models.IntegerField()
     image = models.ImageField()
+
+    def __str__(self):
+        return self.title

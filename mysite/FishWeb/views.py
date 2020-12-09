@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.views import View
-from django.views.generic import ListView
+
+from django.views.generic import ListView, View
 
 from .models import Item
 

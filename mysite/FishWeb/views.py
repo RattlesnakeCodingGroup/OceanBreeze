@@ -19,7 +19,8 @@ class ProductView(View):
 
 class StoreView(View):
     def get(self, request):
-        return render(request, 'store.html')
+        city = "Russia, Ekaterinburg, Mira 32"
+        return render(request, 'store.html', {'city': city,})
 
 class FishView(ListView):
     model = Item

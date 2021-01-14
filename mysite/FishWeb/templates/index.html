@@ -11,6 +11,39 @@
   <meta name="author" content="">
 
   <title>Business Casual - Start Bootstrap Theme</title>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApjv3Y0ILk3wr60LqAxs343rxBxNbb28Q&callback=initMap&libraries=&v=weekly"
+            defer></script>
+    <style type="text/css">
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 70%;
+            /* The width is the width of the web page */
+            margin-left: auto;
+            margin-right: auto;
+
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = {lat: 28.059708537972938, lng: -82.45088032987418};
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 17,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            {#const marker = new google.maps.Marker({#}
+            {#    position: uluru,#}
+            {#    map: map,#}
+            {#});#}
+        }
+    </script>
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -83,13 +116,8 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <div class="cta-inner text-center rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Our Promise</span>
-              <span class="section-heading-lower">To You</span>
-            </h2>
-            <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
-          </div>
+            <h1 class="text-md-center section-heading mb-4"><span class="section-heading-lower">Our Menu</span></h1>
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/menu.webp' %}" alt="">
         </div>
       </div>
     </div>

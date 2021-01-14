@@ -61,8 +61,9 @@
                             {% comment %} <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top" {% endcomment %}
 
                             {#                  <p>{{ item.image.url }}</p>#}
-
-                            <img src="{{ item.image.url }}" class="card-img-top">
+                            <div class="embed-responsive embed-responsive-4by3">
+                            <img src="{{ item.image.url }}" class="card-img-top embed-responsive-item">
+                            </div>
 
                             {#                     <img src="SSX.jpg" onmouseover="this.src='SSX2.jpg';" onmouseout="this.src='SSX.jpg';" height=100 width=120 />#}
                             {#                   <img src="{{ item.image.url }}" onmouseover="this.src='{{ item.back_image.url }}';" onmouseout="this.src='SSX.jpg';" height=100 width=120 />#}
@@ -90,13 +91,13 @@
                                         <span class="mr-1">
                                             <del>{{ item.price|floatformat:2  }}</del>
                                           </span>
-                                          <span>${{ item.discount_price|floatformat:2  }}</span>
+                                          <span>${{ item.discount_price|floatformat:2  }} ({{ item.measurement }})</span>
 
                                         <br>
                                         In Stock: {{ item.quantity }}
                                         <br>
                                     {% else %}
-                                        {{ item.price|floatformat:2 }}
+                                        {{ item.price|floatformat:2 }} ({{ item.measurement }})
                                         <br>
                                         In Stock: {{ item.quantity }}
                                         <br>

@@ -22,6 +22,11 @@ class StoreView(View):
         city = "Russia, Ekaterinburg, Mira 32"
         return render(request, 'store.html', {'city': city,})
 
-class FishView(ListView):
-    model = Item
-    template_name = 'product.html'
+
+class beeView(View):
+    def get(self, request):
+        return render(request, 'products.html')
+
+# class FishView(ListView):
+#     model = Item
+#     template_name = 'product.html'

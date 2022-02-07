@@ -34,7 +34,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
         <div class="container">
-            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Castillo Honey</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,50 +73,56 @@
                         <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                             <li class="list-unstyled-item list-hours-item d-flex">
                                 Sunday
-                                <span class="ml-auto">10:00 AM to 4:30 PM</span>
+                                <span class="ml-auto">Closed</span>
                             </li>
                             <li class="list-unstyled-item list-hours-item d-flex">
                                 Monday
-                                <span class="ml-auto">9:00 AM to 7:00 PM</span>
+                                <span class="ml-auto">8:00 AM to 6:00 PM</span>
                             </li>
                             <li class="list-unstyled-item list-hours-item d-flex">
                                 Tuesday
-                                <span class="ml-auto">9:00 AM to 7:00 PM</span>
+                                <span class="ml-auto">8:00 AM to 6:00 PM</span>
                             </li>
                             <li class="list-unstyled-item list-hours-item d-flex">
                                 Wednesday
-                                <span class="ml-auto">9:00 AM to 7:00 PM</span>
+                                <span class="ml-auto">8:00 AM to 6:00 PM</span>
                             </li>
                             <li class="list-unstyled-item list-hours-item d-flex">
                                 Thursday
-                                <span class="ml-auto">9:00 AM to 7:00 PM</span>
+                                <span class="ml-auto">8:00 AM to 6:00 PM</span>
                             </li>
                             <li class="list-unstyled-item list-hours-item d-flex">
                                 Friday
-                                <span class="ml-auto">9:00 AM to 7:00 PM</span>
+                                <span class="ml-auto">8:00 AM to 6:00 PM</span>
                             </li>
                             <li class="list-unstyled-item list-hours-item d-flex">
                                 Saturday
-                                <span class="ml-auto">9:00 AM to 7:00 PM</span>
+                                <span class="ml-auto">8:00 AM to 1:00 PM</span>
                             </li>
                         </ul>
                         <p class="address mb-5">
                             <em>
-                                <strong>12309 N Nebraska Ave</strong>
+                                <strong>7030 Dormany Loop</strong>
                                 <br>
-                                Tampa, Florida
+                                Plant City, Florida
                                 <br>
                                 <small>
                                     <em>Call Us</em>
                                 </small>
                                 <br>
-                                (813) 971-0113
+                                (813) 965-2848
                             </em>
                         </p>
 {#                        <p class="mb-0">#}
 {##}
 {#                        </p>#}
-                        <div class="address mb-5" id="map"></div>
+                        
+                        <div class="row" style="height: 300px;">
+                            <div class="col d-none d-sm-block col-md-2"><p></p></div>
+                            <div class="col col-sm-12 col-md-8 col-lg-8">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.3876768896325!2d-82.2103979849292!3d28.104214882629222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba3d3e787d678b37!2sCastillo%20Honey%20Inc!5e0!3m2!1sen!2sus!4v1639693338776!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,12 +167,10 @@
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<!-- <script src="{% static 'js/scripts.js'%}"></script>
 
-<!-- Script to highlight the active date in the hours list -->
-<script>
-    $('.list-hours li').eq(new Date().getDay()).addClass('today');
-</script>
+
 
 
 </body>

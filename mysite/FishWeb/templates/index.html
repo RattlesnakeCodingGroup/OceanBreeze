@@ -1,74 +1,85 @@
 {% load static %}
-
+<!-- color pallete: https://colorhunt.co/palette/fbe6c2f0c929f48b29ac0d0d -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
+  {% block title %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Business Casual - Start Bootstrap Theme</title>
+  <meta name="description" content="Castillo Honey, Pollination services in the Tampa and Plant city area. Castillo Honey offers Pollination services locally
+  and accross the nation. Locally sourced all-natural honey for sale!">
+  <meta name="image" content="og:image" content="/static/img/Castillo/castillologo.JPG">
+  <meta name="keywords" content="pollination, pollination services near me, pollination services, local honey, all-natural honey, unfiltered honey, plant city honey, tampa honey, tampa pollination services, plant city pollination services, almond pollination, beekeepers, beekeepers near me, tampa apiary, plant city apiary">
+  <meta name="google-site-verification" content="lZVF_hOU0KvMBVTQIymy_bzVZvVt7Ex-RSfE-IO4O78" />  
+  <title>Castillo Honey | Pollination services | Raw honey | Honey for sale</title>
         <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApjv3Y0ILk3wr60LqAxs343rxBxNbb28Q&callback=initMap&libraries=&v=weekly"
             defer></script>
-    <style type="text/css">
-        /* Set the size of the div element that contains the map */
-        #map {
-            height: 400px;
-            /* The height is 400 pixels */
-            width: 70%;
-            /* The width is the width of the web page */
-            margin-left: auto;
-            margin-right: auto;
+  
+  <link rel="icon" type="image/x-icon" href="/static/img/castillologo.ico">
 
-            border-radius: 5px;
-        }
-    </style>
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            // The location of Uluru
-            const uluru = {lat: 28.059708537972938, lng: -82.45088032987418};
-            // The map, centered at Uluru
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 17,
-                center: uluru,
-            });
-            // The marker, positioned at Uluru
-            {#const marker = new google.maps.Marker({#}
-            {#    position: uluru,#}
-            {#    map: map,#}
-            {#});#}
-        }
-    </script>
 
-  <!-- Bootstrap core CSS -->
-  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+  <style>
+    .icon-bar {
+                  position: fixed;
+                  top: 65%;
+                  left: 0%;
+                  -webkit-transform: translateY(-50%);
+                  -ms-transform: translateY(-50%);
+                  transform: translateY(-50%);
+                }
+                .icon-bar a {
+                  display: block;
+                  text-align: center;
+                  padding: 7.5px;
+                  transition: all 0.3s ease;
+                  color: white;
 
-  <!-- Custom styles for this template -->
-  <link href="{% static 'css/styles.css '%}" rel="stylesheet">
+                }
+  </style>
+<div class="container">
+  <div class="d-none d-lg-block icon-bar ">
+
+      <!-- <a class="btn btn-primary btn-social mx-2" href="https://www.instagram.com/sacagoldendragons/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <br> -->
+      <a class="btn btn-primary btn-social mx-2" href="https://www.facebook.com/castillo.honey.3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <br>
+      <a class="btn btn-primary btn-social mx-2" href="https://www.youtube.com/channel/UCf4hbfIVh-dTrA1IOCx6zLA" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+</div>
+<!-- Bootstrap core CSS -->
+  <!-- <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   {% endblock %}
+
+
 
 </head>
+  <!-- Font Awesome icons (free version)-->
+  <script async src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+  
 
+  <!-- Custom fonts for this template -->
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" >
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/styles.css'%}" rel="stylesheet">
 
 <body>
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Ocean Breeze</span>
-    <span class="site-heading-lower">Fish Market</span>
+    <span class="site-heading-upper text-primary mb-3">Castillo Honey</span>
+    <span class="site-heading-lower" style="color: rgba(0, 0, 0, 0.7);">All Natural</span>
   </h1>
 {% block body %}
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Castillo Honey</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -96,13 +107,13 @@
   <section class="page-section clearfix">
     <div class="container">
       <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/redsnap.jpg' %}" alt="">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/beeClose.JPG' %}" alt="">
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
           <h2 class="section-heading mb-4">
-            <span class="section-heading-upper">Fresh Seafood</span>
-            <span class="section-heading-lower">Worth Buying</span>
+            <span class="section-heading-upper">Pollinator Services</span>
+            <span class="section-heading-lower">For your needs</span>
           </h2>
-          <p class="mb-3">Great prices on a large selection of Fresh Seafood. We also offer purchases of whole fish. We guarantee you will be satisfied by our selection!
+          <p class="mb-3">From cross country pollination on farms to local pollination, we do it all! We also offer a wide range of honey and bee products.
           </p>
           <div class="intro-button mx-auto">
             <a class="btn btn-primary btn-xl" href="{% url 'FishWeb:store' %}">Visit Us Today!</a>
@@ -112,24 +123,57 @@
     </div>
   </section>
 
+
   <section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">More than</span>
+                        <span class="section-heading-lower" style="font-size: 2.5rem;">Pollination</span>
+                    </h2>
+                    <p class="mb-0">Without our pollinators, humans and all of earth's land-based 
+                      ecosystems would be incapable of surviving. At Castillo Honey Inc. we take great care of our honey bees and provide
+                      the best pollination services around. Pollination services are provided to growers of nuts, fruits and vegetables. Apart from pollination services
+                      we also provide locally sourced all-natural honey and beeswax products.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- <section class="page-section cta">
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
             <h1 class="text-md-center section-heading mb-4"><span class="section-heading-lower">Our Menu</span></h1>
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/menu.webp' %}" alt="">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/Castillo/truck.jpg' %}" alt="">
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
     {% endblock %}
+
+    {% block footer %}
   <footer class="footer text-faded text-center py-5">
-    <div class="container">
-      <p class="m-0 small">Copyright &copy; Ocean Breeze Fish Market</p>
+    <div class="container ">
+      <p class="m-0 small">Copyright &copy; Castillo Honey Inc.</p>
       <a href='https://www.freepik.com/vectors/pattern'>Pattern vector created by macrovector - www.freepik.com</a>
+      <br><br>
+      <div class="row alignitems-center">
+      <div class="col-lg-4 my-3 my-lg-0"><p></p></div>
+      <div class="col-lg-4 my-3 my-lg-0">
+        <!-- <a class="btn btn-primary btn-social mx-2" href="#" target="_blank"><i class="fab fa-instagram"></i></a> -->
+        <a class="btn btn-primary btn-social mx-2" href="https://www.facebook.com/castillo.honey.3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-primary btn-social mx-2" href="https://www.youtube.com/channel/UCf4hbfIVh-dTrA1IOCx6zLA" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="col-lg-4 my-3 my-lg-0"></div>
+  </div>
     </div>
   </footer>
-
+  {% endblock %}
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'vendor/jquery/jquery.min.js'  %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>

@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Lora';
-  background-image: linear-gradient(rgba(42, 59, 187, 0.65), rgba(42, 59, 187, 0.65)), url("../img/wavebg.jpg");
+  background-image: linear-gradient(rgba(251, 230, 194, 0.45), rgba(251, 230, 194, 0.45)), url("../img/drawflower.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -75,12 +75,14 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(30, 43, 129, 0.9);
+  z-index: 0;
+  background-color: rgba(244, 139, 41, 0.9);
   font-family: 'Raleway';
 }
 
 #mainNav .navbar-brand {
-  color: #96caff;
+  
+  color: #AC0D0D;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -89,7 +91,7 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #96caff;
+  color: #AC0D0D;
 }
 
 @media (min-width: 992px) {
@@ -100,7 +102,7 @@ p {
     color: rgba(255, 255, 255, 0.4);
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #96caff;
+    color: #AC0D0D;
   }
 }
 
@@ -145,7 +147,7 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(150, 202, 255, 0.9);
+  background-color: rgba(211, 124, 43, 0.9);
 }
 
 .cta .cta-inner {
@@ -163,7 +165,7 @@ p {
   bottom: -0.5rem;
   left: -0.5rem;
   right: -0.5rem;
-  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  border: 0.25rem solid #ff0000;
   z-index: -1;
 }
 
@@ -203,7 +205,7 @@ p {
 }
 
 .list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(30, 43, 129, 0.9);
+  border-bottom: 1px solid rgba(244, 139, 41, 0.9);
   padding-bottom: .25rem;
   margin-bottom: 1rem;
   font-style: italic;
@@ -211,7 +213,7 @@ p {
 
 .list-hours .list-hours-item.today {
   font-weight: bold;
-  color: #96caff;
+  color: #AC0D0D;
 }
 
 @media (min-width: 992px) {
@@ -226,31 +228,43 @@ p {
 }
 
 .footer {
-  background-color: rgba(30, 43, 129, 0.9);
+  background-color: rgba(244, 139, 41, 0.9);
 }
 
 .text-primary {
-  color: #96caff !important;
+  color: #AC0D0D !important;
 }
 
 .bg-primary {
-  background-color: #96caff !important;
+  background-color: #AC0D0D !important;
 }
 
 .btn {
+  z-index: 2;
   box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+
 }
 
 .btn-primary {
-  background-color: #96caff;
-  border-color: #96caff;
+  background-color: #AC0D0D;
+  border-color: #AC0D0D;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: rgb(30, 43, 129);
-  border-color: rgb(30, 43, 129);
+  background-color: rgb(126, 55, 12);
+  border-color: rgb(126, 55, 12);
 }
 
 .font-weight-light {
   font-weight: 100 !important;
+}
+
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
 }
